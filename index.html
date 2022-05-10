@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="#" />
+    <link href="css/style.css" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+
+
+<body class="container">
+<!--------HEADER-------->
+<header>
+    <a href="https://www.aluracursos.com/"><img src="img/logoAlura.png" alt="logo Alura"></a>
+    <div class="header-title">
+        <h1>Encriptador de texto</h1>
+        <p>
+        Herramienta online para codificar y decodificar texto
+        </p>
+    </div>
+</header>
+
+<main>
+<!--------SECTION 1-------->
+<section class="box-1">
+    <form class="form-text">
+        <textarea type="text" class="input-text" cols="54" rows="10" placeholder="Ingrese el texto aquí" required></textarea>
+        <br>
+        <p>Solo letras minúsculas y sin acentos</p>
+        <div class="input-text-btns">
+            <button type="button" class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+            <button type="button" class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            <button type="button" class="btn-limpiar" onclick="btnLimpiarFormularioInput()">Limpiar</button>
+        </div>
+    </form>
+</section>
+
+
+<!--------SECTION 2-------->
+<section class="box-2">
+<div class="output-message">
+
+    <form class="form-output hidden">
+        <textarea type="text" class="output-text" cols="30" rows="10" readonly></textarea>
+        <div class="output-text-btns">
+            <button type="button" class="btn-copy" onclick="btnCopiar()">Copiar</button>
+            <button type="button" class="btn-limpiar" onclick="btnLimpiarFormularioOutput()">Limpiar</button>
+        </div>
+    </form>
+
+<!--------Illustration-------->
+    <div class="output-disabled">
+        <img class="illustration" src="img/illustrationSearch.png" alt="joven con una lupa buscando"/>
+        <h2>Ningún mensaje fue encontrado</h2>
+        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+    </div>
+</div>
+</section>
+</main>
+
+<!--------FOOTER-------->
+<footer>
+    <p>Copyright © 2022 MilagrosCastro. All rights reserved.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
